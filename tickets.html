@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets & Registration - Lesotho Cultural Heritage Festival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><img src="national-flag.png" alt="Lesotho Flag" class="flag-icon"> Lesotho Cultural Heritage Festival <img src="national-flag.png" alt="Lesotho Flag" class="flag-icon"></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="tickets.html" class="active">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card fade-in">
+            <h2>Ticket Pricing & Registration</h2>
+            <p>Secure your place at the Lesotho Cultural Heritage Festival! Choose from our flexible ticket options designed to suit every budget and schedule. Early bird discounts available until February 28, 2026.</p>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Ticket Options</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Daily Pass</h3>
+                    <div class="price">M150</div>
+                    <p>Access to all festival activities for one day</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>✓ Main stage performances</li>
+                        <li>✓ Exhibition access</li>
+                        <li>✓ Craft market</li>
+                        <li>✓ Food court access</li>
+                    </ul>
+                    <button class="btn" onclick="selectTicket('Daily Pass', 150)">Select</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Weekend Pass</h3>
+                    <div class="price">M350</div>
+                    <p>Best value! Access all three days</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>✓ All daily pass benefits</li>
+                        <li>✓ Workshop access</li>
+                        <li>✓ Priority seating</li>
+                        <li>✓ Festival souvenir</li>
+                        <li>✓ Free parking</li>
+                    </ul>
+                    <button class="btn" onclick="selectTicket('Weekend Pass', 350)">Select</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>VIP Experience</h3>
+                    <div class="price">M750</div>
+                    <p>Premium festival experience</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>✓ All weekend pass benefits</li>
+                        <li>✓ VIP seating area</li>
+                        <li>✓ Meet & greet sessions</li>
+                        <li>✓ Guided tours</li>
+                        <li>✓ Complimentary meals</li>
+                        <li>✓ Exclusive workshops</li>
+                    </ul>
+                    <button class="btn" onclick="selectTicket('VIP Experience', 750)">Select</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Special Packages</h2>
+            <div class="grid">
+                <div>
+                    <h3>👨‍👩‍👧‍👦 Family Package</h3>
+                    <p><strong>M800</strong> (2 adults + 2 children)</p>
+                    <p>Perfect for families wanting to experience the festival together. Includes weekend passes for all family members plus special kids' activities.</p>
+                </div>
+                <div>
+                    <h3>🎓 Student Package</h3>
+                    <p><strong>M200</strong> (with valid student ID)</p>
+                    <p>Special discount for students. Includes weekend pass and access to educational workshops and cultural exchange programs.</p>
+                </div>
+                <div>
+                    <h3>🌍 International Visitor Package</h3>
+                    <p><strong>M500</strong></p>
+                    <p>Includes weekend pass, airport transfers, accommodation discounts, and guided city tour of Maseru.</p>
+                </div>
+                <div>
+                    <h3>👥 Group Package</h3>
+                    <p><strong>M120 per person</strong> (10+ people)</p>
+                    <p>Special rates for groups, schools, and organizations. Includes dedicated group coordinator and customized itinerary.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Registration Form</h2>
+            <form class="registration-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country *</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="lesotho">Lesotho</option>
+                        <option value="south-africa">South Africa</option>
+                        <option value="botswana">Botswana</option>
+                        <option value="namibia">Namibia</option>
+                        <option value="zimbabwe">Zimbabwe</option>
+                        <option value="mozambique">Mozambique</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticketType">Ticket Type *</label>
+                    <select id="ticketType" name="ticketType" required>
+                        <option value="">Select ticket type</option>
+                        <option value="daily">Daily Pass - M150</option>
+                        <option value="weekend">Weekend Pass - M350</option>
+                        <option value="vip">VIP Experience - M750</option>
+                        <option value="family">Family Package - M800</option>
+                        <option value="student">Student Package - M200</option>
+                        <option value="international">International Visitor - M500</option>
+                        <option value="group">Group Package - M120/person</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="attendance">Days Attending *</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">Select days</option>
+                        <option value="day1">Day 1 - March 25</option>
+                        <option value="day2">Day 2 - March 26</option>
+                        <option value="day3">Day 3 - March 27</option>
+                        <option value="all">All Three Days</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="participants">Number of Participants</label>
+                    <input type="number" id="participants" name="participants" min="1" max="50" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequests">Special Requirements or Requests</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any dietary requirements, accessibility needs, or special requests..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="newsletter" value="yes">
+                        I would like to receive festival updates and newsletters
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the festival terms and conditions *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Complete Registration</button>
+            </form>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Payment Information</h2>
+            <div class="grid">
+                <div>
+                    <h3>💳 Payment Methods</h3>
+                    <ul>
+                        <li>Credit/Debit Cards (Visa, Mastercard)</li>
+                        <li>Mobile Money (EcoCash, M-Pesa)</li>
+                        <li>Bank Transfer</li>
+                        <li>Cash at Festival Office</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>🏦 Banking Details</h3>
+                    <p><strong>Bank:</strong> Standard Lesotho Bank</p>
+                    <p><strong>Account Name:</strong> Lesotho Cultural Heritage Festival</p>
+                    <p><strong>Account Number:</strong> 1234567890</p>
+                    <p><strong>Branch:</strong> Maseru Main Branch</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Important Information</h2>
+            <div class="grid">
+                <div>
+                    <h3>📅 Early Bird Discount</h3>
+                    <p>Save 20% on all tickets when you book before February 28, 2026. Use code: EARLYBIRD26</p>
+                </div>
+                <div>
+                    <h3>🔄 Refund Policy</h3>
+                    <p>Full refund available up to 7 days before the festival. 50% refund up to 3 days before. No refunds within 72 hours.</p>
+                </div>
+                <div>
+                    <h3>🎫 Ticket Collection</h3>
+                    <p>Collect your physical tickets at the festival entrance or receive e-tickets via email upon confirmation of payment.</p>
+                </div>
+                <div>
+                    <h3>👥 Group Bookings</h3>
+                    <p>For groups of 10 or more, please contact our group booking team at groups@lesothofestival.ls</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Frequently Asked Questions</h2>
+            <div class="grid">
+                <div>
+                    <h3>Are children allowed?</h3>
+                    <p>Yes! Children under 12 enter free when accompanied by an adult. Special kids' activities are available throughout the festival.</p>
+                </div>
+                <div>
+                    <h3>Is parking available?</h3>
+                    <p>Free parking is available on-site for all ticket holders. VIP ticket holders get reserved parking spaces.</p>
+                </div>
+                <div>
+                    <h3>Can I bring food?</h3>
+                    <p>Outside food and drinks are not permitted, but our food court offers a wide variety of traditional and international cuisine.</p>
+                </div>
+                <div>
+                    <h3>Is the venue wheelchair accessible?</h3>
+                    <p>Yes, the festival grounds are fully wheelchair accessible. Please inform us of any special requirements when booking.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lesotho Cultural Heritage Festival. All rights reserved.</p>
+        <p>Promoting Basotho Culture to the World 🇱🇸</p>
+    </footer>
+
+    <script>
+        function selectTicket(type, price) {
+            document.getElementById('ticketType').value = type.toLowerCase().replace(' ', '-');
+            document.getElementById('ticketType').focus();
+            window.scrollTo({
+                top: document.querySelector('.registration-form').offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your registration! We will contact you shortly with payment details.');
+            // In a real application, this would submit the form to a server
+        }
+    </script>
+</body>
+</html>

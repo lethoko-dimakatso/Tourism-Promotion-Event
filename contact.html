@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lesotho Cultural Heritage Festival</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><img src="national-flag.png" alt="Lesotho Flag" class="flag-icon"> Lesotho Cultural Heritage Festival <img src="national-flag.png" alt="Lesotho Flag" class="flag-icon"></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card fade-in">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have questions about the festival, need assistance with registration, or want to become a partner, our team is here to help.</p>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><strong>General Inquiries:</strong><br>info@lesothofestival.ls</p>
+                    <p><strong>Ticket Support:</strong><br>lethokodimakatso432@gmail.com</p>
+                    <p><strong>Partnerships:</strong><br>maserucitycouncil@gmail.com</p>
+                    <p><strong>Media Inquiries:</strong><br>media@lesothofestival.ls</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p><strong>Main Office:</strong><br>+266 2231 4567</p>
+                    <p><strong>Ticket Hotline:</strong><br>+266 2231 4568</p>
+                    <p><strong>Emergency:</strong><br>+266 2231 4569</p>
+                    <p><strong>WhatsApp:</strong><br>+266 6361 0196</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>📍 Address</h3>
+                    <p><strong>Festival Office:</strong></p>
+                    <p>Lesotho Tourism Board Building<br>
+                    King Moshoeshoe I Road<br>
+                    Maseru 100<br>
+                    Lesotho</p>
+                    <p><strong>Festival Venue:</strong></p>
+                    <p>Maseru Showgrounds<br>
+                    Near Mokorotlo Mountain</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>🕐 Office Hours</h3>
+                    <p><strong>Monday - Friday:</strong><br>08:00 - 17:00</p>
+                    <p><strong>Saturday:</strong><br>09:00 - 13:00</p>
+                    <p><strong>Sunday:</strong><br>Closed</p>
+                    <p><strong>Festival Days:</strong><br>07:00 - 23:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Location Map</h2>
+            <div style="background: #f0f8ff; padding: 2rem; border-radius: 10px; text-align: center;">
+                <h3>Maseru Showgrounds - Festival Venue</h3>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; margin: 1rem 0;">
+                    <div>
+                        <p>🗺️ Interactive Map</p>
+                        <p style="font-size: 0.9rem;">Maseru Showgrounds, Lesotho</p>
+                        <p style="font-size: 0.8rem; margin-top: 1rem;">Coordinates: -29.3100° S, 27.4800° E</p>
+                    </div>
+                </div>
+                <p><strong>Directions:</strong> The festival venue is easily accessible from Maseru city center, located just 5km from the central business district along the main road to the border.</p>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Send Us a Message</h2>
+            <form class="registration-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="contactName">Full Name *</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address *</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactPhone">Phone Number</label>
+                    <input type="tel" id="contactPhone" name="contactPhone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="tickets">Ticket Information</option>
+                        <option value="programme">Programme Details</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                        <option value="media">Media Inquiry</option>
+                        <option value="volunteer">Volunteer Information</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Please tell us how we can help you..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Follow Us on Social Media</h2>
+            <p>Stay connected and join our growing community! Follow us for the latest updates, behind-the-scenes content, and exclusive offers.</p>
+            
+            <div class="social-links">
+                <a href="https://facebook.com/lesothofestival" target="_blank" title="Facebook">
+                    <span>f</span>
+                </a>
+                <a href="https://twitter.com/lesothofestival" target="_blank" title="Twitter">
+                    <span>𝕏</span>
+                </a>
+                <a href="https://instagram.com/lesothofestival" target="_blank" title="Instagram">
+                    <span>📷</span>
+                </a>
+                <a href="https://youtube.com/lesothofestival" target="_blank" title="YouTube">
+                    <span>▶</span>
+                </a>
+                <a href="https://linkedin.com/company/lesothofestival" target="_blank" title="LinkedIn">
+                    <span>in</span>
+                </a>
+                <a href="https://tiktok.com/@lesothofestival" target="_blank" title="TikTok">
+                    <span>♫</span>
+                </a>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <h3>📘 Facebook</h3>
+                    <p>Join our Facebook community for daily updates, event photos, and discussions with fellow festival enthusiasts.</p>
+                    <p><strong>@LesothoCulturalFestival</strong></p>
+                </div>
+                <div>
+                    <h3>📷 Instagram</h3>
+                    <p>Follow us for stunning visuals of Basotho culture, behind-the-scenes content, and festival highlights.</p>
+                    <p><strong>@LesothoFestival</strong></p>
+                </div>
+                <div>
+                    <h3>🐦 Twitter</h3>
+                    <p>Real-time updates, festival news, and live coverage during the event. Use our hashtag #LesothoFest2026</p>
+                    <p><strong>@LesothoFestival</strong></p>
+                </div>
+                <div>
+                    <h3>📺 YouTube</h3>
+                    <p>Watch performances from previous years, artist interviews, and cultural documentaries.</p>
+                    <p><strong>Lesotho Cultural Heritage Festival</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Festival Partners</h2>
+            <p>We are proud to work with amazing partners who help make this festival possible:</p>
+            
+            <div class="grid">
+                <div>
+                    <h3>🏛️ Government Partners</h3>
+                    <ul>
+                        <li>Ministry of Tourism, Environment and Culture</li>
+                        <li>Lesotho Tourism Board</li>
+                        <li>Maseru City Council</li>
+                        <li>Lesotho National Museum</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>🤝 International Partners</h3>
+                    <ul>
+                        <li>UNESCO Cultural Heritage</li>
+                        <li>African Union Commission</li>
+                        <li>World Tourism Organization</li>
+                        <li>SADC Cultural Programme</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>💼 Corporate Sponsors</h3>
+                    <ul>
+                        <li>Standard Lesotho Bank</li>
+                        <li>Mascom Lesotho</li>
+                        <li>Lesotho Breweries</li>
+                        <li>Lesotho Post Bank</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>🎭 Cultural Organizations</h3>
+                    <ul>
+                        <li>Basotho Cultural Association</li>
+                        <li>Lesotho Arts Council</li>
+                        <li>Traditional Music Society</li>
+                        <li>Craft Producers Association</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Volunteer With Us</h2>
+            <p>Join our team of passionate volunteers and be part of something special! We welcome volunteers from all backgrounds to help make the festival a success.</p>
+            
+            <div class="grid">
+                <div>
+                    <h3>🎯 Volunteer Opportunities</h3>
+                    <ul>
+                        <li>Event Coordination</li>
+                        <li>Guest Services</li>
+                        <li>Social Media Team</li>
+                        <li>Photography & Videography</li>
+                        <li>Translation Services</li>
+                        <li>Cultural Ambassadors</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>🎁 Benefits of Volunteering</h3>
+                    <ul>
+                        <li>Free festival access</li>
+                        <li>Certificate of appreciation</li>
+                        <li>Networking opportunities</li>
+                        <li>Cultural immersion experience</li>
+                        <li>Volunteer t-shirt and meals</li>
+                        <li>Letters of recommendation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <p><strong>To volunteer:</strong> Email us at <a href="mailto:volunteers@lesothofestival.ls">volunteers@lesothofestival.ls</a> with your CV and a brief statement about why you'd like to join our team.</p>
+            </div>
+        </section>
+
+        <section class="card fade-in">
+            <h2>Media & Press</h2>
+            <p>Media representatives are welcome to cover the Lesotho Cultural Heritage Festival. Please contact our media team for accreditation and press passes.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📰 Media Contact</h3>
+                    <p><strong>Media Coordinator:</strong><br>Thato Mokoena</p>
+                    <p><strong>Email:</strong><br>media@lesothofestival.ls</p>
+                    <p><strong>Phone:</strong><br>+266 2231 4570</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📸 Press Resources</h3>
+                    <p>High-resolution photos, press releases, and media kits are available upon request.</p>
+                    <p>Download our media kit: <a href="#" style="color: #0052CC;">Media Kit 2026 (PDF)</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lesotho Cultural Heritage Festival. All rights reserved.</p>
+        <p>Promoting Basotho Culture to the World 🇱🇸</p>
+    </footer>
+
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            // In a real application, this would submit the form to a server
+        }
+    </script>
+</body>
+</html>
